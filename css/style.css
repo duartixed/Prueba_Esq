@@ -1,0 +1,40 @@
+* {
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+    box-sizing: border-box; /* Incluye el borde y el padding en el tamaño total del elemento */
+}
+
+body {
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    display: flex; /* Utiliza flexbox para el diseño */
+    min-height: 100vh; /* Mínima altura del cuerpo igual a la altura de la ventana */
+}
+
+.esqueletoOff {
+    width: 550px; /* Ancho del contenedor del esqueleto */
+    height: 600px; /* Alto del contenedor del esqueleto */
+    background-color: rgb(255, 106, 0); /* Color de fondo del esqueleto en reposo */
+    display: flex; /* Utiliza flexbox para el diseño interno */
+    align-items: end; /* Alinea los elementos al final verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    background-image: url(../img/esqueleto2.png); /* Imagen del esqueleto en reposo */
+}
+
+.esqueletoOff.on {
+    background-image: url(../img/esqueleto1.gif); /* Imagen del esqueleto bailando */
+}
+
+.esqueletoOnOff {
+    width: 100px; /* Ancho del botón de bailar */
+    height: 50px; /* Alto del botón de bailar */
+    background-color: rgb(238, 60, 6); /* Color de fondo del botón */
+    border-radius: 1vh; /* Bordes redondeados */
+    border: 0.2rem solid rgb(229, 135, 107); /* Borde del botón */
+    position: fixed; /* Posición fija en la pantalla */
+    color: rgb(247, 242, 240); /* Color del texto en el botón */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    display: flex; /* Utiliza flexbox para el diseño del botón */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Tipografía del botón */
+}
